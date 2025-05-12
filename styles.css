@@ -8,6 +8,11 @@ UNIVERSAL STYLES
     padding: 0;
 }
 
+.page-container{
+    display: flex;
+    flex-direction: column;
+}
+
 /********************************************************
 NAVBAR STYLES
 ********************************************************/
@@ -67,17 +72,11 @@ nav{
     width: 40px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
-    
 }
 
 /********************************************************
 HOME PAGE STYLES
 ********************************************************/
-.page-container{
-    display: flex;
-    flex-direction: column;
-}
-
 .hero-section{
     display: flex;
     width: 100%;
@@ -115,10 +114,9 @@ HOME PAGE STYLES
     font-family: "Roboto Condensed", sans-serif;
     font-size: clamp(2rem, 4vw, 6rem);
     color: white;
-    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
 }
 
-button{
+.text-box button{
     width: auto;
     background-color: #ffffff5d;
     border: white solid 2px;
@@ -130,7 +128,7 @@ button{
     align-self: flex-end;
 }
 
-button:hover{
+.text-box button:hover{
     background-color: white;
     color: #5f6351;
     cursor: pointer;
@@ -150,7 +148,7 @@ button:hover{
 }
 
 /********************************************************
-ABOUT US STYLES
+ABOUT US SECTION STYLES
 ********************************************************/
 
 .about-us-section{
@@ -161,13 +159,6 @@ ABOUT US STYLES
     display: flex;
     align-items: center;
     background-color: #cecdc7;
-}
-
-.about-us-section h1{
-    font-family: "Poiret One";
-    font-weight: 700;
-    font-size: clamp(2rem, 4vw, 8rem);
-    padding-bottom: 2rem;
 }
 
 .about-us-content-container{
@@ -181,6 +172,13 @@ ABOUT US STYLES
 
 .about-us-text-container{
     width: 40%;
+}
+
+.about-us-section h1{
+    font-family: "Poiret One";
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 8rem);
+    padding-bottom: 2rem;
 }
 
 .about-us-text-container p{
@@ -197,6 +195,107 @@ ABOUT US STYLES
     width: 100%;
 }
 
+/********************************************************
+PROJECTS SECTION STYLES
+********************************************************/
+
+.projects-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: center;
+    align-self: center;
+    padding: 4rem 0;
+}
+
+.projects-section h1{
+    font-family: "Poiret One";
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 8rem);
+    padding-bottom: 2rem;
+}
+
+.projects-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.single-project-container{
+    display: inline-block;
+    width: 33%;
+    text-decoration: none;
+}
+
+.single-project-container figure{
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.single-project-container figure:hover{
+    transform: scale(1.1);
+}
+
+.single-project-container figcaption {
+    color: black;
+    font-size: clamp(1rem, 3vw, 3rem);
+    text-align: center;
+    font-family: "Poiret One";
+}
+
+.single-project-container p{
+    color: black;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    text-align: center;
+    font-family: "Poiret One";
+}
+
+.project-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.single-project-container button{
+    background-color: #cecdc7;
+    padding: 0.5rem;
+    font-family: "Poiret One";
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    width: 40%;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.single-project-container button:hover{
+    background-color: #838281;
+}
+
+
+
+
+/********************************************************
+FOOTER STYLES
+********************************************************/
+
+footer{
+    background-color: black;
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+}
+
+.address-container{
+    width: 50%;
+    color: white;
+
+}
 
 /********************************************************
 ********************************************************
