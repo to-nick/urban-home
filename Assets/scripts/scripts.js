@@ -21,7 +21,32 @@ function hamburgerActivation(){
     });
 }
 
+function scrollToSection(link, section){
+
+    document.querySelector(link).addEventListener("click", function(e) {
+        e.preventDefault();
+        const pageSection = document.querySelector(section);
+
+        if(window.innerWidth > 767){
+            pageSection.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+            });
+            return;
+        }
+
+        pageSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+            });
+      });
+    }
+
 document.addEventListener("DOMContentLoaded", () => {
     hamburgerActivation();
+    scrollToSection(".about-us-link", ".about-us-section");
+    scrollToSection(".projects-link", ".projects-section");
 })
+
+
 
