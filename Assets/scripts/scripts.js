@@ -32,7 +32,6 @@ function scrollToSection(link, section){
             behavior: "smooth",
             block: "center"
             });
-            return;
         }
 
         pageSection.scrollIntoView({
