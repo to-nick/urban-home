@@ -46,6 +46,3 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToSection(".about-us-link", ".about-us-section");
     scrollToSection(".projects-link", ".projects-section");
 })
-
-
-
