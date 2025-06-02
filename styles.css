@@ -1,5 +1,7 @@
 /********************************************************
+********************************************************
 UNIVERSAL STYLES
+********************************************************
 ********************************************************/
 
 *{
@@ -108,8 +110,107 @@ nav{
 }
 
 /********************************************************
-HOME PAGE STYLES
+FOOTER STYLES
 ********************************************************/
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0 0.5rem 0;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.footer-content-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2rem;
+    gap: 10vw;
+}
+
+.footer-logo-container{
+    height: 12vh;
+}
+
+.footer-logo{
+    height: 100%;;
+}
+
+.contact-container{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-container ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-family: var(--font-secondary);
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.quick-links-container{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.quick-links-container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-family: var(--font-secondary);
+    color: white;
+}
+
+.building-certs-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.building-logo-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 10%;
+    padding: 1rem 0;
+}
+
+.building-logo{
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.legal-disclaimer{
+    color: white;
+    font-family: var(--font-secondary);
+}
+
+/********************************************************
+********************************************************
+HOME PAGE STYLES
+********************************************************
+********************************************************/
+/********************************************************
+HERO IMAGE SECTION STYLES
+********************************************************/
+
 .hero-section{
     display: flex;
     width: 100%;
@@ -326,7 +427,7 @@ figure button{
 }
 
 .single-project-container button:hover{
-    background-color: #838281;
+    background-color: rgb(131, 130, 129);
     cursor: pointer;
 }
 
@@ -377,103 +478,111 @@ REVIEW SECTION STYLES
 }
 
 /********************************************************
-FOOTER STYLES
+********************************************************
+BATHROOM PAGE STYLES
+********************************************************
+********************************************************/
+/********************************************************
+BATHROOM HERO IMAGE SECTION STYLES
 ********************************************************/
 
-footer{
-    background-color: black;
+.bathroom-hero-section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    background-color: #cecdc7;
+}
+
+.bathroom-hero-image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.bathroom-hero-text-container{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 3rem 0 0.5rem 0;
-    justify-content: center;
+    position: absolute;
+    padding-left: 10rem;
     width: 100%;
+    top: 25%;
+    background: linear-gradient(to right, rgba(131, 130, 129, 0.7), rgba(131, 130, 129, 0.01 ));
+}
+
+.bathroom-hero-text{
+    font-family: "Lora", sans-serif;
+    white-space: nowrap;
+    font-size: clamp(2rem, 5vw + 3rem, 8rem);
+    color: white;
+    
+}
+
+/********************************************************
+********************************************************
+BATHROOM GALLERY SECTION
+********************************************************
+********************************************************/
+
+.projects-page-container{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.footer-content-container{
+.bathroom-projects-section {
     display: flex;
-    align-items: start;
-    justify-content: center;
     width: 100%;
     max-width: 1440px;
-    padding: 0 2rem;
-    gap: 10vw;
-}
-
-.footer-logo-container{
-    height: 12vh;
-}
-
-.footer-logo{
-    height: 100%;;
-}
-
-.contact-container{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.contact-container ul{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: clamp(1rem, 3vw, 1.25rem);
-    font-family: var(--font-secondary);
-    list-style: none;
-    gap: 0.5rem;
-}
-
-.quick-links-container{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.quick-links-container ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
-    font-size: clamp(1rem, 3vw, 1.25rem);
-    font-family: var(--font-secondary);
-    color: white;
-}
-
-.building-certs-container{
-    display: flex;
-    width: 100%;
+    align-items: center;
     justify-content: center;
-    gap: 2rem;
-    padding-top: 1rem;
-}
-
-.building-logo-container{
-    display: flex;
-    justify-content: center;
+    margin : 0 auto;
+    padding: 2rem;
+    border: green 2px solid;
     gap: 1rem;
-    width: 10%;
-    padding: 1rem 0;
 }
 
-.building-logo{
-    width: 100%;
+.bathroom-thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 25vw;
+    min-height: 100%;
+    border: red solid 2px;
+    justify-content: center;
+}
+
+.bathroom-thumbnail{
+    height: 20vh;
+}
+
+.bathroom-thumbnail-image{
     height: 100%;
-    border: 2px solid white;
+    width: 100%;
+    object-fit: cover;
+} 
+
+.bathroom-main-image-container {
+    display: flex;
+    justify-content: center;
+    border: red solid 2px;
+    height: 80vh;
+    width: 75vw
 }
 
-.legal-disclaimer{
-    color: white;
-    font-family: var(--font-secondary);
+.bathroom-main-image{
+    width: 100%;
+    padding: 1rem;
 }
+
+
 
 /********************************************************
 ********************************************************
 MEDIA QUERIES
 ********************************************************
 ********************************************************/
+
 
 @media(max-width: 1350px){
 

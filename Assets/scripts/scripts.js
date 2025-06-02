@@ -21,6 +21,21 @@ function hamburgerActivation(){
     });
 }
 
+async function renderElement(elementID, elementFile){
+    const element = document.getElementById(elementID);
+
+    try{
+        const file = await fetch(elementFile)
+        element.innerHTML = await file.text()
+
+        if(elementID === "navbar"){
+            hamburgerActivation();
+        }
+    } catch (error){
+        console.error('There was an error rendering the element:', error)
+    }
+}
+
 function scrollToSection(link, section){
 
     document.querySelector(link).addEventListener("click", function(e) {
@@ -42,7 +57,8 @@ function scrollToSection(link, section){
     }
 
 document.addEventListener("DOMContentLoaded", () => {
-    hamburgerActivation();
+    renderElement("navbar", "../navbar.html");
+    renderElement("footer", "../footer.html");
     scrollToSection(".about-us-link", ".about-us-section");
     scrollToSection(".projects-link", ".projects-section");
 })
