@@ -491,6 +491,7 @@ BATHROOM HERO IMAGE SECTION STYLES
     height: 80vh;
     display: flex;
     background-color: #cecdc7;
+    margin-bottom: 2rem;
 }
 
 .bathroom-hero-image{
@@ -506,17 +507,86 @@ BATHROOM HERO IMAGE SECTION STYLES
     position: absolute;
     padding-left: 10rem;
     width: 100%;
-    top: 25%;
+    top: 65%;
     background: linear-gradient(to right, rgba(131, 130, 129, 0.7), rgba(131, 130, 129, 0.01 ));
 }
 
 .bathroom-hero-text{
-    font-family: "Lora", sans-serif;
+    font-family: "Playfair Display", sans-serif;
     white-space: nowrap;
     font-size: clamp(2rem, 5vw + 3rem, 8rem);
     color: white;
     
 }
+
+/********************************************************
+********************************************************
+BATHROOM INTRO SECTION
+********************************************************
+********************************************************/
+
+.bathrooms-intro-section-container{
+    width: 100%;
+    display: flex;
+    background-color: var(--color-logo);
+    padding: 1rem 0;
+}
+
+.bathrooms-intro-section{
+    width: 100%;
+    display: flex;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.bathroom-intro-text-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: end;
+}
+
+.bathroom-heading-container{
+    z-index: 12;
+    width: 230%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bathroom-heading-container h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: clamp(2rem, 3vw + 3rem, 8rem);
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    background: linear-gradient(to left, rgba(131, 130, 129, 0.7), rgba(131, 130, 129, 0.01 ));
+}
+
+.bathroom-intro-text-container p{
+    color: white;
+    font-family: var(--font-primary), sans-serif;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.bathroom-intro-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bathroom-intro-image-container p{
+    color: white;
+    text-align: center;
+    font-family: var(--font-primary);   
+}
+
+.bathrooms-intro-section-small{
+    display: none;
+}
+
 
 /********************************************************
 ********************************************************
@@ -528,54 +598,333 @@ BATHROOM GALLERY SECTION
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-secondary);
 }
 
 .bathroom-projects-section {
     display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     align-items: center;
     justify-content: center;
     margin : 0 auto;
     padding: 2rem;
-    border: green 2px solid;
     gap: 1rem;
 }
 
-.bathroom-thumbnail-container {
+.bathroom-projects-section h3{
+    align-self: flex-start;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+.gallery-container{
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.gallery-container h3{
+    display: inline;
+}
+
+.gallery-image-container{
+    display: flex;
+    width: 50%;
+}
+
+.gallery-image{
+    width: 100%;
+    height: 100%;
+}
+
+
+/********************************************************
+********************************************************
+KITCHEN PAGE STYLES
+********************************************************
+********************************************************/
+/********************************************************
+KITCHEN HERO IMAGE SECTION STYLES
+********************************************************/
+.kitchen-hero-section{
+    width: 100%;
     height: 80vh;
-    width: 25vw;
-    min-height: 100%;
-    border: red solid 2px;
-    justify-content: center;
+    display: flex;
+    background-color: #cecdc7;
+    margin-bottom: 2rem;
 }
 
-.bathroom-thumbnail{
-    height: 20vh;
-}
-
-.bathroom-thumbnail-image{
+.kitchen-hero-image{
+    object-fit: cover;
     height: 100%;
     width: 100%;
-    object-fit: cover;
-} 
-
-.bathroom-main-image-container {
-    display: flex;
-    justify-content: center;
-    border: red solid 2px;
-    height: 80vh;
-    width: 75vw
 }
 
-.bathroom-main-image{
+.kitchen-hero-text-container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 10rem;
     width: 100%;
+    top: 65%;
+    background: linear-gradient(to right, rgba(131, 130, 129, 0.7), rgba(131, 130, 129, 0.01 ));
+}
+
+.kitchen-hero-text{
+    font-family: "Playfair Display", sans-serif;
+    white-space: nowrap;
+    font-size: clamp(2rem, 5vw + 3rem, 8rem);
+    color: white;
+    
+}
+
+/********************************************************
+KITCHEN INTRO SECTION STYLES
+********************************************************/
+
+.kitchen-intro-section-container{
+    width: 100%;
+    display: flex;
+    background-color: var(--color-logo);
+    padding: 1rem 0;
+}
+
+.kitchen-intro-section{
+    width: 100%;
+    display: flex;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.kitchen-intro-text-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: end;
+}
+
+.kitchen-heading-container{
+    z-index: 12;
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kitchen-heading-container h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: clamp(2rem, 3vw + 3rem, 8rem);
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    background: linear-gradient(to left, rgba(131, 130, 129, 0.7), rgba(131, 130, 129, 0.01 ));
+}
+
+.kitchen-intro-text-container p{
+    color: white;
+    font-family: var(--font-primary), sans-serif;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.kitchen-intro-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 90vh;
+}
+
+.kitchen-intro-image-container p{
+    color: white;
+    text-align: center;
+    font-family: var(--font-primary);   
+}
+
+.get-in-touch-button{
+    font-size: clamp(1rem, 3vw, 2rem);
+    width: 50%;
+    align-self: flex-end;
+    font-family: var(--font-secondary);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: black solid 2px;
+    background-color: var(--color-primary);
+}
+
+.get-in-touch-button:hover{
+    cursor: pointer;
+    background-color: rgb(206, 205, 199);
+    color: #515655;
+}
+
+.kitchen-intro-section-small{
+    display: none;
+}
+
+/********************************************************
+********************************************************
+KITCHEN GALLERY SECTION
+********************************************************
+********************************************************/
+
+.projects-page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+}
+
+.kitchen-projects-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: center;
+    margin : 0 auto;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.kitchen-projects-section h3{
+    align-self: flex-start;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+.gallery-container{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.gallery-container h3{
+    display: inline;
+}
+
+.gallery-image-container{
+    display: flex;
+    width: auto;
+    height: 35vh
+}
+
+.gallery-image{
+    width: 100%;
+    height: 100%;
+}
+
+/********************************************************
+********************************************************
+CONTACT US STYLES
+********************************************************
+********************************************************/
+
+.contact-page-container{
+    width: 100%;
+    display: flex;
+    background-color: var(--color-primary);
+    justify-content: center;
+}
+
+.contact-us-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.contact-us-section h1{
+    font-size: clamp(2rem, 3vw, 6rem);
+    font-family: 'Playfair Display', sans-serif;
+    padding-top: 1rem;
+}
+
+.contact-us-section p{
+    font-size: clamp(1rem, 3vw, 2rem);
+    font-family: 'Playfair Display', sans-serif;
     padding: 1rem;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    gap: 1.5rem;
+    padding: 2rem;
+}
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-family: var(--font-secondary);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 2px solid var(--color-secondary);
+    border-radius: 5px;
+    font-family: var(--font-secondary);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+    border-color: #474747;
+}
+
+.submit-button {
+    align-self: flex-end;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-secondary);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+@media(max-width: 768px) {
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .submit-button {
+        width: 100%;
+    }
+}
 
 /********************************************************
 ********************************************************
@@ -677,7 +1026,34 @@ HOME PAGE STYLES
     .reviews-container{
         gap: 1rem;
     }
+
+    .bathrooms-intro-section{
+        padding: 1rem;
+    }
+
+    .bathroom-heading-container h1{
+        font-size: clamp(2rem, 3vw + 2rem, 8rem);
+    }
+
+    .kitchen-intro-section{
+        padding: 1rem;
+    }
+
+    .kitchen-heading-container h1{
+        font-size: clamp(2rem, 3vw + 2rem, 8rem);
+    }
+
+    .get-in-touch-button{
+        width: 60%;
+    }
 }
+
+@media(max-width: 950px){
+    .kitchen-heading-container{
+        width: 220%;
+    }
+}    
+
 
 @media(max-width: 900px){
     .reviews-container{
@@ -687,6 +1063,23 @@ HOME PAGE STYLES
 
     .review-image-container{
         width: 100%;
+    }
+
+    .bathroom-intro-text-container{
+        gap: 1rem;
+    }
+
+    .kitchen-heading-container{
+        width: 235%;
+    }
+
+    .kitchen-heading-container h1{
+        font-size: clamp(2rem, 3vw + 1.5rem, 8rem);
+    }
+
+    .get-in-touch-button{
+        width: 70%;
+        align-self: center;
     }
 }
 
@@ -812,6 +1205,150 @@ HOME PAGE STYLES
     .single-project-container figure:hover{
         transform: none;
     }
+
+    /********************************************************
+    BATHROOM PAGE STYLES
+    ********************************************************/
+
+    .bathroom-hero-text-container{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .bathrooms-intro-section{
+        display: none;
+    }
+
+    .bathrooms-intro-section-small{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 1rem;
+    }
+
+    .bathroom-intro-image-container-small{
+        width: 100%;
+        height: 60vh
+    }
+
+    .bathroom-intro-image-small{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 80%;
+    }
+
+    .bathroom-intro-image-container-small p{
+        text-align: center;
+        color: white;
+        font-family: var(--font-primary), sans-serif;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .bathroom-heading-container-small{
+        position: relative;
+        top: -80%;
+    }
+
+    .bathroom-heading-container-small{
+        padding: 1rem;
+        background: linear-gradient(to right, rgba(131, 130, 129, 0.8), rgba(131, 130, 129, 0.01 ));
+        font-size: clamp(1.75rem, 3vw, 8rem);
+    }
+
+    .bathroom-heading-container-small h1{
+        font-family: 'Playfair Display', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .bathroom-intro-text-container-small{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .bathroom-intro-text-container-small p{
+        color: white;
+        font-family: var(--font-primary), sans-serif;
+        font-size: clamp(1.25rem, 2vw, 1.75rem);
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+
+    /********************************************************
+    KITCHEN PAGE STYLES
+    ********************************************************/
+
+    .kitchen-hero-text-container{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .kitchen-intro-section{
+        display: none;
+    }
+
+    .kitchen-intro-section-small{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 2rem;
+    }
+
+    .kitchen-intro-image-container-small{
+        width: 100%;
+        height: 60vh
+    }
+
+    .kitchen-intro-image-small{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 80%;
+    }
+
+    .kitchen-intro-image-container-small p{
+        text-align: center;
+        color: white;
+        font-family: var(--font-primary), sans-serif;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .kitchen-heading-container-small{
+        position: relative;
+        top: -80%;
+    }
+
+    .kitchen-heading-container-small{
+        padding: 1rem;
+        background: linear-gradient(to right, rgba(131, 130, 129, 0.8), rgba(131, 130, 129, 0.01 ));
+        font-size: clamp(1.75rem, 3vw, 8rem);
+    }
+
+    .kitchen-heading-container-small h1{
+        font-family: 'Playfair Display', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .kitchen-intro-text-container-small{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .kitchen-intro-text-container-small p{
+        color: white;
+        font-family: var(--font-primary), sans-serif;
+        font-size: clamp(1.25rem, 2vw, 1.75rem);
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+
+    .get-in-touch-button{
+        align-self: center;
+        width: 30%;
+        font-size: clamp(1rem, 4vw + 0.25rem, 3rem);
+    }
 }
 
 @media (max-width: 523px) {
@@ -823,7 +1360,26 @@ HOME PAGE STYLES
     .building-logo-container{
         width: 20%;
     }
+
+    .bathroom-heading-container-small{
+        font-size: clamp(1.25rem, 3vw, 8rem);
+    }
+
+    .bathroom-heading-container-small{
+        padding: 1rem;
+        background: linear-gradient(to right, rgba(131, 130, 129, 0.8), rgba(131, 130, 129, 0.3 ));
+        font-size: clamp(1.65rem, 3vw, 8rem);
+    }
+
+    .kitchen-heading-container-small{
+        padding: 1rem;
+        background: linear-gradient(to right, rgba(131, 130, 129, 0.8), rgba(131, 130, 129, 0.3 ));
+        font-size: clamp(1.65rem, 3vw, 8rem);
+    }
     
+    .get-in-touch-button{
+        width: 40%;
+    }
 }
 
 @media(max-width: 480px){
@@ -840,4 +1396,29 @@ HOME PAGE STYLES
     .building-logo-container{
         width: 30%;
     }
+
+    .bathroom-heading-container-small{
+        font-size: clamp(1.2rem, 3vw, 8rem);
+    }
+
+    .bathroom-intro-section-small{
+        padding: 1rem;
+    }
+
+    .kitchen-intro-section-small{
+        padding: 1rem;
+    }
+
+    .kitchen-heading-container-small{
+        font-size: clamp(1.2rem, 3vw, 8rem);
+    }
 }
+
+@media(max-width: 400px){  
+    .bathroom-heading-container-small{
+        font-size: clamp(1rem, 3vw, 8rem);
+    }
+}    
+
+
+
