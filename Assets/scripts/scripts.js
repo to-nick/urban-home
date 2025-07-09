@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', function() {
   function enableReviewCarousel() {
     const container = document.querySelector('.reviews-container');
-    const items = document.querySelectorAll('.review-image-container');
+    const items = document.querySelectorAll('.review-content');
     const bars = document.querySelectorAll('.carousel-bar');
     if (!container || !items.length || !bars.length) return;
 
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update on resize
     window.addEventListener('resize', function() {
-      if (window.innerWidth <= 900) {
+      if (window.innerWidth <= 1300) {
         scrollToIndex(currentIndex);
         startAutoScroll();
       } else {
@@ -168,8 +168,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  if (window.innerWidth <= 900) enableReviewCarousel();
+  if (window.innerWidth <= 1300) enableReviewCarousel();
   window.addEventListener('resize', function() {
-    if (window.innerWidth <= 900) enableReviewCarousel();
+    if (window.innerWidth <= 1300) enableReviewCarousel();
   });
 });
