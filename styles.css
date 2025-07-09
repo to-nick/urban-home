@@ -44,12 +44,15 @@ nav{
     display: flex;
     flex-direction: column;
     height: 100%;
+    aspect-ratio: 1/1;
+    flex: 0 0 auto;
     border: solid red 2px;
 }
 
 .nav-logo{
     height: 100%;
     width: 100%;
+    object-fit: contain;
 }
 
 .logo-text{
