@@ -19,8 +19,7 @@ html, body{
     --color-secondary: rgb(206, 205, 199);
     --color-logo: #515655;
 
-    --font-primary: "Poiret One";
-    --font-secondary: "Roboto Condensed";
+    --font-primary: "Roboto Condensed";
   }
 
 .page-container{
@@ -75,7 +74,7 @@ nav{
     display: flex;
     gap: 4rem;
     list-style: none;
-    font-family: var(--font-secondary), sans-serif;
+    font-family: var(--font-primary), sans-serif;
     font-weight: 700;
 }
 
@@ -162,7 +161,7 @@ footer{
     flex-direction: column;
     color: white;
     font-size: clamp(1rem, 3vw, 1.25rem);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     list-style: none;
     gap: 0.5rem;
 }
@@ -180,14 +179,14 @@ footer{
     gap: 0.5rem;
     list-style: none;
     font-size: clamp(1rem, 3vw, 1.25rem);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     color: white;
 }
 
 .footer-li{
     list-style: none;
     font-size: clamp(1rem, 3vw, 1.25rem);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     color: white;
     text-decoration: none;
 }
@@ -216,7 +215,7 @@ footer{
 
 .legal-disclaimer{
     color: white;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
 
 /********************************************************
@@ -239,84 +238,48 @@ HERO IMAGE SECTION STYLES
     border: 0;
   }
 
-.hero-section{
-    display: flex;
+  .home-intro-section-container{
     width: 100%;
-    background-color: #5f6351;
-    justify-content: space-evenly;
-    z-index: 11;
-    max-height: 80vh;
-    margin-bottom: 10vh;
-}
-
-.text-box{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 30fr 70fr;
     justify-content: center;
-    border: white solid 2px;
-    border-radius: 5px;
-    height: auto;
-    background-color: rgb(95, 99, 81, 0.9);
-    width: 40vw;
-    padding: 2rem;
-    gap: 3rem;
-    z-index: 12;
-    bottom: 10%;
-    left: 10%;
-}
+    align-items: center;
+    align-self: center;
+    margin: 4rem 0 6rem 0;;
+    /* padding: 0rem 2rem; */
+    border: 2px red solid;
+  }
 
-.text-box p{
-    font-family: 'Playfair Display', sans-serif;
-    font-size: clamp(2rem, 4vw, 5rem);
-    color: white;
-}
-
-.button-anchor{
-    color: white;
-    font-family: var(--font-secondary), sans-serif;
-    text-decoration: none;
-    align-self: flex-end;
-}
-
-.button-anchor:hover{
-    background-color: white;
-    color: #5f6351;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.text-box button{
-    width: auto;
-    background-color: #ffffff5d;
-    border: white solid 2px;
-    border-radius: 5px;
-    font-size: clamp(1rem, 2vw, 3rem);
-    color: white;
-    font-family: var(--font-secondary), sans-serif;
-    padding: 1rem;
-}
-
-.text-box button:hover{
-    background-color: white;
-    color: #5f6351;
-    cursor: pointer;
-}
-
-.hero-image-container{
-    display: flex;
+  .home-intro-text-container{
     position: relative;
-    height: auto;
-    justify-content: center;
-    flex-shrink: 1;
-    width: 100%;
-}
+    width: 130%;
+    max-width: 130%;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: clamp(1rem, 3vw, 10rem);
+    background-color: rgb(81, 86, 85, 0.9);
+    left: 25%;
+    color: white;
+    padding: 2rem;
+    z-index: 20;
+  }
 
-.hero-image{
-    width: 100%;
+  .home-hero-image-container{
+    display: flex;
     height: 100%;
+    width: 110%;
+    max-width: 100%;
+    max-height: 75vh;
+    z-index: 19;
+  }
+
+  .home-hero-image{
+    height: 115%;
+    width: 80%;
     object-fit: cover;
-}
+    align-self: center;
+  }
+
 
 /********************************************************
 ABOUT US SECTION STYLES
@@ -325,52 +288,83 @@ ABOUT US SECTION STYLES
 .about-us-section{
     align-self: center;
     width: 100%;
-    height: 60vh;
-    min-height: 700px;
     flex-direction: column;
     display: flex;
     align-items: center;
-    background-color: #cecdc7;
+    background-color: #e9eae6;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
 }
 
 .about-us-content-container{
     display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 0rem 3rem 2rem 3rem;
     max-width: 1440px;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.about-us-text-container{
-    width: 50%;
-    padding: 2rem 0;
+.border-left{
+    position: relative;
+}
+
+.border-left:before{
+    content: "";
+    position: absolute;
+    left: 2%;
+    top: 0;
+    height: 100%;
+    width: 0;
+    border-left: 2px solid black;
+    z-index: 1;
+}
+
+.border-right{
+    position: relative;
+}
+
+.border-right:before{
+    content: "";
+    position: absolute;
+    right: 2%;
+    bottom: -20%;
+    height: 120%;
+    width: 0;
+    border-right: 2px solid black;
+    z-index: 99;
+}
+
+.display-small{
+    display: none;
+}
+
+.display-large{
+    display: flex;
 }
 
 .about-us-section h2{
     font-family: "DM Serif Text", sans-serif;
     font-weight: 700;
-    font-size: clamp(2rem, 4vw + 1rem, 7rem);
-    padding-bottom: 2rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     color: rgb(0, 0, 0);
-    text-align: center;
+    align-self: flex-start;
 }
 
-.about-us-text-container p{
-    font-size: clamp(1rem, 2vw - 0.25rem, 1.5rem);
-    font-family: var(--font-secondary), sans serif;
-    text-align: center;
+.content-container-part-two{
+    display: flex;
+    gap: 2rem;
 }
 
 .about-us-image-container{
+    width: 50%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    width: auto;
-    height: 115%;
-    position: relative;
     z-index: 12;
-
 }
 
 .about-us-image{
@@ -378,6 +372,47 @@ ABOUT US SECTION STYLES
     height: 100%;
     object-fit: cover;
 }
+
+.about-us-image-container-two{
+    position: absolute;
+    bottom: -10%;
+    top: 0%;
+    right: 10%;
+    height: 110%;
+    display: flex;
+    z-index: 12;
+    aspect-ratio: 4/5;
+}
+
+.about-us-image-two{
+    width: 100%;
+    height: 100%;
+    object-position: center top;
+    object-fit: cover;
+}
+
+.about-us-text-container-one{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    padding: 2rem 2rem, 2rem 0;
+    align-items: center;
+    font-size: clamp(0.85rem, 2vw - 0.25rem, 1.75rem);
+    font-family: "Playfair Display", sans serif;
+}
+
+.about-us-text-container-two{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    padding: 2rem 2rem, 2rem 0;
+    align-items: center;
+    font-size: clamp(0.85rem, 2vw - 0.25rem, 1.75rem);
+    font-family: "Playfair Display", sans serif;
+}
+
 
 /********************************************************
 PROJECTS SECTION STYLES
@@ -439,7 +474,7 @@ PROJECTS SECTION STYLES
     color: black;
     font-size: clamp(1rem, 3vw, 3rem);
     text-align: center;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
 
 .single-project-container p{
@@ -447,7 +482,7 @@ PROJECTS SECTION STYLES
     font-size: clamp(1rem, 3vw, 1.5rem);
     text-align: center;
     font-family: "Poiret One";
-    font-family: var(--font-secondary)
+    font-family: var(--font-primary)
 }
 
 figure button{
@@ -563,7 +598,7 @@ REVIEW SECTION STYLES
 }
 
 .review-text {
-    font-family: var(--font-secondary, 'Roboto Condensed'), sans-serif;
+    font-family: var(--font-primary, 'Roboto Condensed'), sans-serif;
     display: flex;
     flex-direction: column;
     font-size: clamp(0.75rem, 2vw, 1.35rem);
@@ -586,7 +621,7 @@ REVIEW SECTION STYLES
 }
 
 .review-author {
-    font-family: var(--font-secondary, 'Roboto Condensed'), sans-serif;
+    font-family: var(--font-primary, 'Roboto Condensed'), sans-serif;
     font-size: 1.25rem;
     font-style: italic;
     color: #ededed;
@@ -648,6 +683,24 @@ BATHROOM INTRO SECTION
     color: rgb(255, 255, 255);
     font-weight: 100;
     white-space: noWrap;
+}
+
+.get-in-touch-button-bathroom{
+    font-size: clamp(1rem, 3vw, 2rem);
+    width: 50%;
+    align-self: flex-end;
+    font-family: var(--font-primary);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: black solid 2px;
+    background-color: var(--color-primary);
+}
+
+.get-in-touch-button-bathroom:hover{
+    cursor: pointer;
+    background-color: rgb(206, 205, 199);
+    color: #515655;
 }
 
 .bathroom-intro-image-container{
@@ -747,7 +800,7 @@ BATHROOM GALLERY SECTION
     align-self: flex-start;
     position: relative;
     left: 12.5%;
-    font-size: clamp(1rem, 2vw, 1.75rem);
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
     padding: 1rem;
 }
 
@@ -833,7 +886,7 @@ BATHROOM GALLERY SECTION
     text-align: end;
     align-self: flex-end;
     position: relative;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
     right: 11%;
     padding: 1rem;
 }
@@ -935,7 +988,7 @@ BATHROOM GALLERY SECTION
     align-self: flex-start;
     position: relative;
     left: 17%;
-    font-size: clamp(1rem, 2vw, 1.75rem);
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
     padding: 1rem;
 }
 
@@ -1140,7 +1193,7 @@ BATHROOM GALLERY SECTION
 
 .b-project-title-nine{
     font-family: var(--font-primary);
-    font-size: clamp(1rem, 2vw, 1.75rem);
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
     align-self: flex-start;
     position: relative;
     left: 17%;
@@ -1214,29 +1267,23 @@ KITCHEN INTRO SECTION
     object-fit: cover;
 }
 
-.kitchen-intro-image-container p{
-    color: white;
-    text-align: center;
-    font-family: var(--font-primary);   
-}
 
-
-.get-in-touch-button{
+.get-in-touch-button-kitchen{
     font-size: clamp(1rem, 3vw, 2rem);
     width: 50%;
     align-self: flex-end;
-    font-family: var(--font-secondary);
-    color: white;
+    font-family: var(--font-primary);
+    color: #595b59;
     padding: 0.5rem;
     border-radius: 10px;
-    border: black solid 2px;
-    background-color: var(--color-primary);
+    border: #595b59 solid 2px;
+    background-color: #e5e1df;
 }
 
-.get-in-touch-button:hover{
+.get-in-touch-button-kitchen:hover{
     cursor: pointer;
-    background-color: rgb(206, 205, 199);
-    color: #515655;
+    background-color: #515655;
+    color: #e5e1df;
 }
 
 /********************************************************
@@ -1319,7 +1366,7 @@ KITCHEN GALLERY SECTION
     align-self: flex-start;
     position: relative;
     left: 12.5%;
-    font-size: clamp(1rem, 2vw, 1.75rem);
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
     padding: 1rem;
 }
 
@@ -1404,7 +1451,7 @@ KITCHEN GALLERY SECTION
     text-align: end;
     align-self: flex-end;
     position: relative;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
     right: 11%;
     padding: 1rem;
 }
@@ -1511,7 +1558,7 @@ KITCHEN GALLERY SECTION
     width: auto;
     font-family: var(--font-primary);
     width: auto;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
     padding: 1rem 0;
 }
 
@@ -1673,7 +1720,7 @@ KITCHEN GALLERY SECTION
 
 .k-project-title-eight{
     font-family: var(--font-primary);
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.75rem, 2vw, 1.75rem);
     align-self: flex-start;
     padding-left: 15%;
 }
@@ -1728,7 +1775,7 @@ CONTACT US STYLES
 }
 
 .form-group label {
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     font-size: clamp(1rem, 2vw, 1.25rem);
     color: white;
 }
@@ -1738,7 +1785,7 @@ CONTACT US STYLES
     padding: 0.75rem;
     border: 2px solid var(--color-secondary);
     border-radius: 5px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     font-size: clamp(1rem, 2vw, 1.25rem);
     background-color: white;
 }
@@ -1766,7 +1813,7 @@ CONTACT US STYLES
     color: white;
     border: none;
     border-radius: 5px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     font-size: clamp(1rem, 2vw, 1.25rem);
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -1791,64 +1838,6 @@ MEDIA QUERIES
 
 
 @media(max-width: 1350px){
-
-/********************************************************
-HOME PAGE STYLES
-********************************************************/
-
-    .hero-image-container{
-        width: 100%;
-        height: 80vh;
-        display: flex;
-        justify-content: flex-end;
-        background-color: #5f6351;
-    }
-
-    .hero-image{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        transform: none;
-    }
-
-    .text-content-container{
-        display: none;
-    }
-
-    .text-box-small{
-        position: absolute;
-        display: flex;
-        aspect-ratio: 2/1;
-        flex-direction: column;
-        border: white solid 2px;
-        border-radius: 5px;
-        height: auto;
-        background-color: rgb(206, 205, 199, 0.75);
-        max-height: 40%;
-        max-width: 65%;
-        padding: 2rem;
-        justify-content: center;
-        gap: 1.5rem;
-        z-index: 11;
-        left: 10vw;
-        bottom: 10%;
-    }
-
-    .text-box-small h1{
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: clamp(1.5rem, 4vw + 1rem, 6rem);
-        color: rgb(66, 63, 63);
-    }
-
-    .text-box-small button:hover{
-        background-color: #838281;
-        cursor: pointer;
-    }
-
-/********************************************************
-BATHROOM PAGE STYLES
-********************************************************/
-
     .b-row-six-img{
         width: 100%;
     }
@@ -1857,35 +1846,6 @@ BATHROOM PAGE STYLES
         max-height: 40vh;
         align-items: center;
         justify-content: center;
-    }
-
-/********************************************************
-KITCHEN PAGE STYLES
-********************************************************/
-
-    
-}
-
-@media(max-width: 1100px){
-    .nav-list{
-        gap: 1.55rem;
-    }
-
-    .text-box{
-        width: 50vw;
-        gap: 1rem;
-    }
-
-    .reviews-section{
-        padding: 1;
-    }
-
-    .reviews-container{
-        gap: 1rem;
-    }
-
-    .get-in-touch-button{
-        width: 60%;
     }
 }
 
@@ -1946,7 +1906,7 @@ KITCHEN PAGE STYLES
         height: 8px;
     }
 
-    .get-in-touch-button{
+    .get-in-touch-button-bathroom, .get-in-touch-button-kitchen{
         width: 70%;
     }
 
@@ -1961,6 +1921,34 @@ KITCHEN PAGE STYLES
         top: -30%;
         height: 130%;
         border-right: black solid 2px;
+    }
+}
+
+@media(max-width: 800px){
+    .about-us-image-container-two{
+        right: 5%;
+    }
+}
+
+@media(max-width: 1100px){
+    .nav-list{
+        gap: 1.55rem;
+    }
+
+    .about-us-image-container-two{
+        height: 120%;
+    }
+
+    .reviews-section{
+        padding: 1;
+    }
+
+    .reviews-container{
+        gap: 1rem;
+    }
+
+    .get-in-touch-button-bathroom, .get-in-touch-button-kitchen{
+        width: 60%;
     }
 }
 
@@ -2032,29 +2020,60 @@ NAVBAR STYLES
 HOME PAGE STYLES
 ********************************************************/
 
-    .text-box{
-    width: 60vw;
-    }
-
-    .about-us-section{
-        height: auto;
-    }
-
     .about-us-content-container{
+     gap: 0rem;
+     padding-top: 2rem;
+    }
+
+    .about-us-section h2{
+        align-self: center;
+    }
+
+    .display-small{
+        display: flex;
+        align-self: center;
+    }
+
+    .display-large{
+        display: none;
+    }
+
+    .content-container-part-two{
         flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: center;
     }
 
     .about-us-image-container{
-        width: 90%;
-        height: 100%;
+        aspect-ratio: 5/4;
+        width: 100%;
     }
 
-    .about-us-text-container{
-        width: 90%;
+    .about-us-text-container-one{
+        width: 80%;
     }
 
-    .about-us-section h1{
-        padding-bottom: 1rem;
+    .about-us-text-container-two{
+        width: 80%;
+    }
+
+    .border-right:before{
+        content: "";
+        position: absolute;
+        right: 2%;
+        bottom: -10%;
+        height: 110%;
+        width: 0;
+        border-right: 2px solid black;
+        z-index: 99;
+    }
+
+    .about-us-image-container-two{
+        position: relative;
+        right: 0%;
+        width: 75%;
+        padding-top: 1rem;
     }
 
     .projects-container{
@@ -2365,7 +2384,6 @@ HOME PAGE STYLES
     }
 }
 
-@media (max-width: 700px) {
     .review-content {
         padding: 2rem 0.5rem;
     }
@@ -2382,10 +2400,10 @@ HOME PAGE STYLES
 }
 
 @media (max-width: 600px) {
-    .text-box{
-        width: 70vw;
-        left: 15%;
-        }
+
+    .b-gallery-row-one{
+        grid-template-columns: 5fr 50fr 45fr;
+    }
 
     .b-row-one-img-container::after{
         left: 8%;
@@ -2443,6 +2461,10 @@ HOME PAGE STYLES
         width: 20%;
     }
 
+    .about-us-content-container{
+        padding: 2rem;
+    }
+
     .bathroom-intro-text-container{
         gap: 2rem;
         padding: 1rem;
@@ -2468,18 +2490,17 @@ HOME PAGE STYLES
 }
 
 @media(max-width: 480px){
-    .text-box{
-        width: 80vw;
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    .about-us-content-container{
-        gap: 1rem;
-    }
 
     .building-logo-container{
         width: 30%;
+    }
+
+    .about-us-text-container-one{
+        width: 100%;
+    }
+
+    .about-us-text-container-two{
+        width: 100%;
     }
 
     .bathrooms-intro-section{
@@ -2504,6 +2525,7 @@ HOME PAGE STYLES
 
     .b-gallery-row-one{
         padding: 1rem 1rem 0 0rem;
+        grid-template-columns: 5fr 50fr 45fr;
     }
 
     .b-row-one-img-container::after{
@@ -2550,6 +2572,7 @@ HOME PAGE STYLES
         padding: 1rem 1rem 0 0rem;
         grid-template-columns: 5fr 50fr 45fr;
     }
+
 
     .k-row-one-img-container::after{
         left: 9%;
@@ -2605,12 +2628,15 @@ HOME PAGE STYLES
 
 @media(max-width: 400px){  
 
-    .text-box{
-        width: 90vw;
-        left: 5%;
+    .border-left:before{
+        left: 4%;
     }
 
-    .get-in-touch-button{
+    .border-right:before{
+        right: 4%;
+    }
+
+    .get-in-touch-button-bathroom, .get-in-touch-button-kitchen{
         width: auto;
     }
 
