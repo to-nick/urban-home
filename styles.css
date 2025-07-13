@@ -491,18 +491,20 @@ PROJECTS SECTION STYLES
 }
 
 .single-project-container{
-    width: 33%;
+    width: 100%;
     text-decoration: none;
     display: flex;
 }
 
 .single-project-container figure{
+    aspect-ratio: 1/1;
     width: 100%;
-    flex: 0 0 auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     transition: transform 0.3s ease;
+    aspect-ratio: 1/1;
 }
 
 .single-project-container figure:hover{
@@ -511,14 +513,17 @@ PROJECTS SECTION STYLES
 
 .project-image{
     width: 100%;
-    aspect-ratio: 1;
+    height: 100%;
     object-fit: cover;
+    aspect-ratio: 1/1;
+    flex: 1;
 }
 
 .single-project-container figcaption {
     color: black;
     font-size: clamp(1rem, 3vw, 3rem);
     text-align: center;
+    white-space: nowrap;
     font-family: var(--font-primary);
 }
 
@@ -528,23 +533,6 @@ PROJECTS SECTION STYLES
     text-align: center;
     font-family: "Poiret One";
     font-family: var(--font-primary)
-}
-
-figure button{
-    background-color: #cecdc7;
-    padding: 0.5rem;
-    font-family: "Poiret One";
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    width: 40%;
-    align-self: center;
-    margin-top: auto;
-    border: none;
-    border-radius: 5px;
-}
-
-.single-project-container button:hover{
-    background-color: rgb(131, 130, 129);
-    cursor: pointer;
 }
 
 /********************************************************
@@ -619,7 +607,7 @@ REVIEW SECTION STYLES
   height: 8px;
 }
 
-/* REVIEW CARD COMPONENT STYLES (from review.html) */
+
 .review-content {
     background: var(--color-logo);
     max-width: 650px;
