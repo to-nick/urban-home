@@ -799,10 +799,11 @@ BATHROOM GALLERY SECTION
     align-self: center;
     font-family: 'Playfair Display', sans-serif;
     font-size: clamp(1.5rem, 3vw, 3rem);
-    writing-mode: sideways-lr;
+    writing-mode: vertical-rl;
     display: inline-block;
+    transform: rotate(180deg);
     white-space: noWrap;
-    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .b-row-one-img-container{
@@ -2483,7 +2484,7 @@ HOME PAGE STYLES
     }
 
     .bathroom-projects-section h2{
-        padding-right: 0rem;
+        padding-left: 0rem;
     }
 
     .b-row-one-img-container::after{
