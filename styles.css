@@ -1366,10 +1366,11 @@ KITCHEN GALLERY SECTION
     align-self: center;
     font-family: 'Playfair Display', sans-serif;
     font-size: clamp(1.5rem, 3vw, 3rem);
-    writing-mode: sideways-lr;
+    writing-mode: vertical-rl;
     display: inline-block;
+    transform: rotate(180deg);
     white-space: noWrap;
-    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .k-row-one-img-container{
@@ -1845,10 +1846,11 @@ HOME EXTENSION STYLES
     align-self: center;
     font-family: 'Playfair Display', sans-serif;
     font-size: clamp(1.5rem, 2vw, 3rem);
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
     display: inline-block;
     white-space: noWrap;
-    padding-right: 1rem;
+    padding-left: 1rem;
     align-self: flex-start;
 }
 
@@ -2635,8 +2637,12 @@ HOME PAGE STYLES
         width: 100%;
     }
 
+    .k-projects-section h2{
+        padding-left: 0rem;
+    }
+
     .k-row-one-img-container::after{
-        left: 9%;
+        left: 8%;
         top: -5%;
         height: 120%;
     }
@@ -2960,7 +2966,7 @@ HOME PAGE STYLES
 
 
     .k-row-one-img-container::after{
-        left: 9%;
+        left: 8%;
         top: -7%;
     }
 
