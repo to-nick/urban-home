@@ -36,31 +36,9 @@ async function renderElement(elementID, elementFile){
     }
 }
 
-function scrollToSection(link, section){
-
-    document.querySelector(link).addEventListener("click", function(e) {
-        e.preventDefault();
-        const pageSection = document.querySelector(section);
-
-        if(window.innerWidth > 767){
-            pageSection.scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-            });
-        }
-
-        pageSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-            });
-      });
-    }
-
 document.addEventListener("DOMContentLoaded", () => {
     renderElement("navbar", "../navbar.html");
     renderElement("footer", "../footer.html");
-    scrollToSection(".about-us-link", ".about-us-section");
-    scrollToSection(".projects-link", ".projects-section");
 })
 
 document.addEventListener('DOMContentLoaded', function() {
