@@ -422,7 +422,7 @@ ABOUT US SECTION STYLES
     position: absolute;
     bottom: -10%;
     top: 0%;
-    right: 10%;
+    right: 8%;
     height: 110%;
     display: flex;
     z-index: 12;
@@ -2252,8 +2252,12 @@ MEDIA QUERIES
         font-size: clamp(2rem, 3vw + 0.75rem, 8rem);
     }
 
-    .about-us-image-container-two{
-        height: 120%;
+    .projects-section{
+        padding: 2rem 2rem;
+    }
+
+    .projects-section h2{
+        padding-bottom: 2rem;
     }
 
     .reviews-section{
@@ -2268,6 +2272,8 @@ MEDIA QUERIES
         width: 60%;
     }
 }
+
+
 
 @media(max-width: 800px){
     .about-us-image-container-two{
@@ -2422,7 +2428,8 @@ HOME PAGE STYLES
     .about-us-image-container-two{
         position: relative;
         right: 0%;
-        width: 75%;
+        width: 55%;
+        height: auto;
         padding-top: 1rem;
     }
 
@@ -2438,10 +2445,15 @@ HOME PAGE STYLES
 
     .projects-section h2{
         padding-bottom: 1rem;
+        font-size: clamp(3rem, 3vw, 4rem)
     }
 
     .single-project-container{
         width: 100%;
+    }
+
+    .single-project-container figcaption {
+        font-size: clamp(2rem, 1vw, 3rem);
     }
 
     .single-project-container figure:hover{
@@ -3041,6 +3053,14 @@ HOME PAGE STYLES
 
     .home-heading-container p{
         font-size: clamp(1.75rem, 3vw, 8rem);
+    }
+
+    .about-us-image-container-two{
+        width: 75%;
+    }
+
+    .single-project-container figcaption {
+        font-size: clamp(1.8rem, 1vw, 3rem);
     }
 
     .border-left:before{
