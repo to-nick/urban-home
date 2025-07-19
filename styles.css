@@ -15,7 +15,7 @@ html, body{
 }
 
 :root {
-    --color-primary: #5f6351;
+    --color-primary: #36392b;
     --color-secondary: rgb(206, 205, 199);
     --color-logo: #515655;
 
@@ -250,80 +250,42 @@ HERO IMAGE SECTION STYLES
     border: 0;
   }
 
-  .home-intro-section-container{
+  .home-hero-section-container{
     width: 100%;
     display: flex;
-    background-color: #A6A59F;
-    padding: 1rem 0;
-    margin: 4rem 0 0rem 0;
     justify-content: center;
 }
 
-.home-intro-section{
-    width: 100%;
-    max-height: 70vh;
-    display: flex;
-    max-width: 1440px;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: 0 2rem;
+.home-hero-section{
+    width: 100vw;
+    position: relative;
+    max-height: 80vh;
+    min-height: 60vh;
 }
 
-.home-intro-text-container{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    justify-content: end;
-}
-
-.home-heading-container{
-    z-index: 12;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.home-heading-container p{
-    font-family: 'Playfair Display', sans-serif;
-    font-size: clamp(2rem, 3vw + 0.25rem, 8rem);
-    color: rgb(255, 255, 255);
-    font-weight: 100;
-    white-space: noWrap;
-}
-
-.get-in-touch-button-home{
-    font-size: clamp(1rem, 3vw, 2rem);
-    width: 50%;
-    align-self: flex-end;
-    font-family: var(--font-primary);
-    color: white;
-    padding: 0.5rem;
-    border-radius: 10px;
-    border: black solid 2px;
-    background-color: #A6A59F;
-}
-
-.get-in-touch-button-home:hover{
-    cursor: pointer;
-    background-color: rgb(76, 75, 75);
-    color: #a9a9a9;
-}
-
-.home-intro-image-container{
-    height: 120%;
-    width: 60%;
-    z-index: 2;
-}
-
-.home-intro-image{
+.home-hero-image{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: right center;
+    object-position: bottom center;
 }
+
+.hero-text-container{
+    position: absolute;
+    width:  fit-content;
+    z-index: 11;
+    background-color: rgba(115, 115, 112);
+    box-shadow: 2px 2px 10px black;
+    border-radius: 5px;
+    font-family: 'Playfair Display', sans-serif;
+    color: white;
+    font-size: clamp(1rem, 3vw + 0.25rem, 6rem);
+    white-space: nowrap;
+    bottom: 10%;
+    right: 10%;
+    padding: 1rem 2rem;
+}
+
 
 /********************************************************
 ABOUT US SECTION STYLES
@@ -797,8 +759,8 @@ BATHROOM GALLERY SECTION
 
 .bathroom-projects-section h2{
     align-self: center;
-    font-family: 'Playfair Display', sans-serif;
-    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 3vw, 2.5rem);
     writing-mode: vertical-rl;
     display: inline-block;
     transform: rotate(180deg);
@@ -814,7 +776,7 @@ BATHROOM GALLERY SECTION
 .b-row-one-img-container::after{
     content: "";
     position: absolute;
-    left: 7%;
+    left: 6%;
     top: 0;
     height: 110%;
     border-left: 2px solid black;
@@ -833,13 +795,21 @@ BATHROOM GALLERY SECTION
     text-align: center;
 }
 
+.b-title-container-left{
+    display: grid;
+    position: relative;
+    grid-template-columns: 5fr 55fr 40fr;
+    gap: 1rem;
+    padding: 0 2rem;
+    width: 90%;
+}
+
 .b-project-title-two{
     font-family: var(--font-primary);
     align-self: flex-start;
     position: relative;
-    left: 12.5%;
     font-size: clamp(0.75rem, 2vw, 1.75rem);
-    padding: 1rem;
+    padding: 0.5rem 0;
 }
 
 .b-gallery-row-two{
@@ -919,14 +889,24 @@ BATHROOM GALLERY SECTION
     object-fit: cover;
 }
 
+.b-title-container-right{
+    display: grid;
+    grid-template-columns: 5fr 52.5fr 52.5fr;
+    gap: 1rem;
+    padding: 0 2rem;
+    width: 90%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
 .b-project-title-four{
     font-family: var(--font-primary);
     text-align: end;
     align-self: flex-end;
     position: relative;
     font-size: clamp(0.75rem, 2vw, 1.75rem);
-    right: 11%;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .b-gallery-row-four{
@@ -1012,7 +992,7 @@ BATHROOM GALLERY SECTION
     object-fit: cover;
 }
 
-.b-gallery-row-six{
+.b-title-six-container{
     display: grid;
     position: relative;
     grid-template-columns: 5fr 42.5fr 42.5fr;
@@ -1025,10 +1005,19 @@ BATHROOM GALLERY SECTION
     font-family: var(--font-primary);
     align-self: flex-start;
     position: relative;
-    left: 17%;
     font-size: clamp(0.75rem, 2vw, 1.75rem);
-    padding: 1rem;
+    padding: 1rem 0 0 0;
 }
+
+.b-gallery-row-six{
+    display: grid;
+    position: relative;
+    grid-template-columns: 5fr 42.5fr 42.5fr;
+    gap: 1rem;
+    padding: 0 2rem 1rem 2rem;
+    width: 90%;
+}
+
 
 .b-row-six-img-container{
     height: 100%;
@@ -1097,7 +1086,6 @@ BATHROOM GALLERY SECTION
     font-family: var(--font-primary);
     font-size: clamp(0.75rem, 2vw, 1.75rem);
     align-self: flex-end;
-    padding: 0 10% 10% 0;
 }
 
 .b-row-seven-text{
@@ -1195,6 +1183,7 @@ BATHROOM GALLERY SECTION
     object-fit: cover;
 }
 
+
 .b-gallery-row-nine{
     display: grid;
     position: relative;
@@ -1229,12 +1218,22 @@ BATHROOM GALLERY SECTION
     object-fit: cover;
 }
 
+.b-title-container-nine{
+    display: grid;
+    position: relative;
+    grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
+    gap: 1rem;
+    padding: 0rem 2rem 0rem 2rem;
+    width: 90%;
+}
+
 .b-project-title-nine{
     font-family: var(--font-primary);
     font-size: clamp(0.75rem, 2vw, 1.75rem);
     align-self: flex-start;
     position: relative;
-    left: 17%;
+    padding: 0.5rem 0;
+    white-space: nowrap;
 }
 
 /* #endregion */
@@ -1364,8 +1363,8 @@ KITCHEN GALLERY SECTION
 
 .k-projects-section h2{
     align-self: center;
-    font-family: 'Playfair Display', sans-serif;
-    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 3vw, 2.5rem);
     writing-mode: vertical-rl;
     display: inline-block;
     transform: rotate(180deg);
@@ -1381,7 +1380,7 @@ KITCHEN GALLERY SECTION
 .k-row-one-img-container::after{
     content: "";
     position: absolute;
-    left: 7%;
+    left: 6%;
     top: 0;
     height: 110%;
     border-left: 2px solid black;
@@ -1403,13 +1402,21 @@ KITCHEN GALLERY SECTION
     align-items: center;
 }
 
-.k-project-title-two{
+.k-project-title-container-left{
+    display: grid;
+    position: relative;
+    grid-template-columns: 5fr 40fr 55fr;
+    gap: 1rem;
+    padding: 0rem 2rem;
+    width: 90%;
+}
+
+.k-project-title-left{
     font-family: var(--font-primary);
     align-self: flex-start;
     position: relative;
-    left: 12.5%;
-    font-size: clamp(0.75rem, 2vw, 1.75rem);
-    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 1.75rem);
+    padding: 1rem 0;
 }
 
 .k-gallery-row-two{
@@ -1417,7 +1424,7 @@ KITCHEN GALLERY SECTION
     position: relative;
     grid-template-columns: 5fr 40fr 55fr;
     gap: 1rem;
-    padding: 0 2rem 1rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
     width: 90%;
 }
 
@@ -1488,14 +1495,24 @@ KITCHEN GALLERY SECTION
     object-fit: cover;
 }
 
-.k-project-title-four{
+.k-project-title-container-right{
+    display: grid;
+    grid-template-columns: 5fr 42.5fr 42.5fr;
+    gap: 1rem;
+    padding: 0 2rem;
+    width: 90%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.k-project-title-right{
     font-family: var(--font-primary);
     text-align: end;
     align-self: flex-end;
     position: relative;
-    font-size: clamp(0.75rem, 2vw, 1.75rem);
-    right: 11%;
-    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 1.75rem);
+    padding: 1rem 0;
 }
 
 .k-gallery-row-four{
@@ -1588,6 +1605,7 @@ KITCHEN GALLERY SECTION
     font-size: clamp(0.75rem, 2vw, 2rem);
     height: 100%;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .k-projects-text-container-row-five p{
@@ -1601,7 +1619,6 @@ KITCHEN GALLERY SECTION
     font-family: var(--font-primary);
     width: auto;
     font-size: clamp(0.75rem, 2vw, 1.75rem);
-    padding: 1rem 0;
 }
 
 .k-gallery-row-six{
@@ -1687,8 +1704,6 @@ KITCHEN GALLERY SECTION
 .k-title-container{
     display: flex;
     flex-direction: column;
-    gap: 0rem;
-    padding: 0 10% 10% 0;
     text-align: start;
 }
 
@@ -1733,7 +1748,7 @@ KITCHEN GALLERY SECTION
     position: relative;
     grid-template-columns: 5fr 55fr 40fr;
     gap: 1rem;
-    padding: 0 2rem 1rem 2rem;
+    padding: 0 2rem;
     width: 90%;
 }
 
@@ -1827,7 +1842,7 @@ HOME EXTENSION STYLES
     display: grid;
     grid-template-columns: 5fr 55fr 40fr;
     gap: 1rem;
-    padding: 5rem 2rem 1rem 0rem;
+    padding: 2rem 2rem 1rem 0rem;
     position: relative;
     width: 100%;
     border-bottom: 2px solid black;
@@ -1844,21 +1859,20 @@ HOME EXTENSION STYLES
 
 .er-projects-section h2{
     align-self: center;
-    font-family: 'Playfair Display', sans-serif;
-    font-size: clamp(1.5rem, 2vw, 3rem);
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    writing-mode: vertical-rl;
     display: inline-block;
+    transform: rotate(180deg);
     white-space: noWrap;
     padding-left: 1rem;
-    align-self: flex-start;
 }
 
 .er-row-one-left-container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
+    gap: 5rem;
     justify-content: center;
 }
 
@@ -2044,12 +2058,14 @@ CONTACT US STYLES
     font-size: clamp(2rem, 3vw, 6rem);
     font-family: 'Playfair Display', sans-serif;
     padding-top: 1rem;
+    color: rgb(218, 214, 214);
 }
 
 .contact-us-section p{
     font-size: clamp(1rem, 3vw, 2rem);
     font-family: 'Playfair Display', sans-serif;
     padding: 1rem;
+    color: rgb(218, 214, 214);
 }
 
 .contact-form {
@@ -2102,7 +2118,7 @@ CONTACT US STYLES
 .submit-button {
     align-self: flex-end;
     padding: 1rem 2rem;
-    background-color: var(--color-primary);
+    background-color: grey;
     color: white;
     border: none;
     border-radius: 5px;
@@ -2130,24 +2146,6 @@ MEDIA QUERIES
         font-size: clamp(2rem, 3vw + 1rem, 8rem);
     }
 
-    .home-heading-container p{
-        font-family: 'Playfair Display', sans-serif;
-        font-size: clamp(2rem, 3vw + 0.5rem, 8rem);
-        color: rgb(255, 255, 255);
-        font-weight: 100;
-        white-space: noWrap;
-    }
-}
-
-@media(max-width: 1700px){
-
-    .home-heading-container p{
-        font-family: 'Playfair Display', sans-serif;
-        font-size: clamp(2rem, 3vw + 1.5rem, 8rem);
-        color: rgb(255, 255, 255);
-        font-weight: 100;
-        white-space: noWrap;
-    }
 }
 
 
@@ -2168,8 +2166,6 @@ MEDIA QUERIES
     .carousel-btn {
          display: none !important; }
   }
-
-
 
 @media(max-width: 1300px){
     .reviews-container {
@@ -2244,14 +2240,6 @@ MEDIA QUERIES
         gap: 1.55rem;
     }
 
-    .home-intro-section-container{
-        margin: 2rem 0 0 0;
-    }
-
-    .home-heading-container p{
-        font-size: clamp(2rem, 3vw + 0.75rem, 8rem);
-    }
-
     .projects-section{
         padding: 2rem 2rem;
     }
@@ -2271,9 +2259,17 @@ MEDIA QUERIES
     .get-in-touch-button-bathroom, .get-in-touch-button-kitchen, .get-in-touch-button-home{
         width: 60%;
     }
+
+    .k-row-one-img-container::after{
+        left: 7%;
+    }
 }
 
-
+@media(max-width: 900px){
+    .b-row-one-img-container::after{
+        left: 7%;
+    }
+}
 
 @media(max-width: 800px){
     .about-us-image-container-two{
@@ -2281,7 +2277,7 @@ MEDIA QUERIES
     }
 
     .er-projects-section h2{
-        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -2352,21 +2348,6 @@ NAVBAR STYLES
 /********************************************************
 HOME PAGE STYLES
 ********************************************************/
-
-    .home-intro-section{
-        margin: 0 2rem 0 0;
-    }
-
-    .home-intro-text-container{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .home-heading-container p{
-        font-size: clamp(2rem, 3vw + 1rem, 8rem);
-    }
 
     .about-us-content-container{
      gap: 0rem;
@@ -2502,7 +2483,7 @@ HOME PAGE STYLES
     }
 
     .b-row-one-img-container::after{
-        left: 8%;
+        left: 7%;
         top: -5%;
     }
 
@@ -2510,8 +2491,9 @@ HOME PAGE STYLES
         padding-right: 0;
     }
 
-    .b-project-title-two{
-        padding: 0.5rem;
+    .b-title-container-left{
+        padding: 0 2rem 0rem 1rem;
+        width: 100%;
     }
 
     .b-gallery-row-two{
@@ -2538,13 +2520,18 @@ HOME PAGE STYLES
         left: 0;
     }
 
-    .b-gallery-row-four{
-        padding: 0 1rem 1rem 1rem;
+    .b-title-container-right{
+        padding: 0 2rem 0 1rem;
         width: 100%;
     }
 
     .b-project-title-four{
-        right: 5%;
+        padding: 0.5rem 0;
+    }
+
+    .b-gallery-row-four{
+        padding: 0 2rem 1rem 1rem;
+        width: 100%;
     }
 
     .b-gallery-row-four::after{
@@ -2563,13 +2550,22 @@ HOME PAGE STYLES
         border-bottom: 2px solid black;
     }
 
-    .b-gallery-row-six{
-        padding: 0 2rem 1rem 1rem;
+    .b-title-six-container{
+        display: grid;
+        position: relative;
+        grid-template-columns: 5fr 42.5fr 42.5fr;
+        gap: 1rem;
+        padding: 0 2rem 0 1rem;
         width: 100%;
     }
 
     .b-project-title-six{
-        left: 10%;
+        padding: 0.5rem 0;
+    }
+
+    .b-gallery-row-six{
+        padding: 0 2rem 1rem 1rem;
+        width: 100%;
     }
 
     .b-gallery-row-six::before{
@@ -2617,9 +2613,15 @@ HOME PAGE STYLES
         border-left: 2px solid black;
     }
 
-    .b-project-title-nine{
-        left: 12%;
+    .b-title-container-nine{
+        display: grid;
+        position: relative;
+        grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
+        gap: 1rem;
+        padding: 0rem 2rem 0rem 1rem;
+        width: 100%;
     }
+
 
     /********************************************************
     KITCHEN PAGE STYLES
@@ -2654,13 +2656,17 @@ HOME PAGE STYLES
     }
 
     .k-row-one-img-container::after{
-        left: 8%;
+        left: 7%;
         top: -5%;
         height: 120%;
     }
 
     .k-gallery-row-one::after{
         left: 0%;
+    }
+
+    .k-project-title-container-left{
+        width: 100%;
     }
 
     .k-gallery-row-two{
@@ -2684,6 +2690,10 @@ HOME PAGE STYLES
 
     .k-gallery-row-three::after{
         left: 0;
+    }
+
+    .k-project-title-container-right{
+        width: 100%;
     }
 
     .k-gallery-row-four{
@@ -2791,10 +2801,6 @@ HOME PAGE STYLES
         top: -5.5%;
     }
 
-    .b-row-one-img-container::after{
-        left: 9.5%;
-    }
-
     .b-gallery-row-two::before{
         right: 3%;
     }
@@ -2804,12 +2810,9 @@ HOME PAGE STYLES
         height: 130%;
     }
 
-    .b-project-title-four{
-        padding: 0.25rem 1rem;
-    }
 
-    .b-project-title-six{
-        padding: 0.25rem 1rem;
+    .b-project-title-four{
+        padding: 0.5rem 0rem;
     }
 
     .b-projects-text-container-nine{
@@ -2821,14 +2824,22 @@ HOME PAGE STYLES
     }
 
     .k-row-one-img-container::after{
-        left: 10%;
+        left: 8%;
         top: -6%;
+    }
+
+    .k-project-title-left{
+        padding: 0.5rem 0;
     }
 
     .k-gallery-row-two::before{
         right: 3%;
         top: -40%;
         height: 140%;
+    }
+
+    .k-project-title-right{
+        padding: 0.5rem 0;
     }
 
     .home-extension-intro-container{
@@ -2840,8 +2851,16 @@ HOME PAGE STYLES
         padding: 4rem;
     }
 
+    .er-row-one-left-container{
+        gap: 3rem
+    }
+
     .er-gallery-row-one::after{
         left: 6%;
+    }
+
+    .er-projects-section h2{
+        font-size: clamp(1.25rem, 2vw, 3rem);
     }
 }
 
@@ -2855,11 +2874,6 @@ HOME PAGE STYLES
         width: 20%;
     }
 
-    .home-intro-text-container{
-        gap: 2rem;
-        padding: 1rem;
-    }
-
     .about-us-content-container{
         padding: 2rem;
     }
@@ -2869,16 +2883,12 @@ HOME PAGE STYLES
         padding: 1rem;
     }
 
-    .b-row-one-img-container::after{
-        left: 11%;
-    }
-
     .kitchen-heading-container p{
         font-size: clamp(1.5rem, 3vw, 8rem);
     }
 
     .k-row-one-img-container::after{
-        left: 10%;
+        left: 8%;
         top: -6%;
     }
 
@@ -2904,25 +2914,6 @@ HOME PAGE STYLES
 
     .building-logo-container{
         width: 30%;
-    }
-
-    .home-intro-section{
-        max-height: 80vh;
-        margin: 0 1rem 0 0;
-    }
-
-    .home-intro-text-container{
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .home-heading-container p{
-        font-size: clamp(1.5rem, 3vw, 8rem);
-    }
-
-    .home-intro-image-container{
-        height: 130%;
-        width: 60%;
     }
 
     .about-us-text-container-one{
@@ -2956,7 +2947,27 @@ HOME PAGE STYLES
     }
 
     .b-row-one-img-container::after{
-        left: 9.5%;
+        left: 6%;
+    }
+
+    .b-title-container-left{
+        padding: 0 2rem 0rem 0rem;
+    }
+
+    .b-gallery-row-two, .b-gallery-row-four, .b-gallery-row-six{
+        padding: 0 2rem 1rem 0rem;
+    }
+
+    .b-gallery-row-three, .b-gallery-row-five, .b-gallery-row-seven, .b-gallery-row-eight{
+        padding: 1rem 2rem 1rem 0rem;
+    }
+
+    .b-gallery-row-nine{
+        padding: 1rem 2rem 0rem 0rem;
+    }
+
+    .b-title-six-container{
+        padding: 0 2rem 0rem 0rem;
     }
 
     .b-gallery-row-six::before{
@@ -2975,6 +2986,10 @@ HOME PAGE STYLES
 
     .b-projects-text-container-eight p{
         padding-top: 0%;
+    }
+
+    .b-title-container-nine{
+        padding: 0rem 1rem 0rem 0rem;
     }
 
     .kitchen-intro-section{
@@ -2998,14 +3013,18 @@ HOME PAGE STYLES
         width: auto;
     }
 
+    .k-project-title-container-left{
+        padding: 0 1rem;
+        grid-template-columns: 5fr 50fr 45fr;
+    }
+
     .k-gallery-row-one{
         padding: 1rem 1rem 0 0rem;
         grid-template-columns: 5fr 50fr 45fr;
     }
 
-
     .k-row-one-img-container::after{
-        left: 8%;
+        left: 6%;
         top: -7%;
     }
 
@@ -3023,6 +3042,10 @@ HOME PAGE STYLES
         padding: 1rem 1rem;
     }
 
+    .k-project-title-container-right{
+        padding: 0rem 1rem;
+    }
+
     .k-gallery-row-four{
         padding: 0rem 1rem 1rem 1rem;
         width: 100%;
@@ -3030,6 +3053,11 @@ HOME PAGE STYLES
 
     .k-gallery-row-five{
         padding: 1rem 1rem;
+    }
+
+    .k-projects-text-container-row-five p{
+        padding-top: 0%;
+        text-align: center;
     }
 
     .k-gallery-row-six{
@@ -3047,7 +3075,7 @@ HOME PAGE STYLES
     }
 
     .k-gallery-row-eight{
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 1rem;
     }
 
     .k-gallery-row-eight::before{
@@ -3059,12 +3087,12 @@ HOME PAGE STYLES
         gap: 1rem;
     }
 
-    .er-projects-section h2{
-        font-size: clamp(1.25rem, 2vw, 3rem);
-    }
-
     .er-gallery-row-one{
         padding: 1rem 1rem 1rem 0rem;
+    }
+
+    .er-row-one-left-container{
+        gap: 2rem
     }
 
     .er-gallery-row-two{
@@ -3077,10 +3105,6 @@ HOME PAGE STYLES
 }
 
 @media(max-width: 400px){  
-
-    .home-heading-container p{
-        font-size: clamp(1.3rem, 3vw, 8rem);
-    }
 
     .about-us-image-container-two{
         width: 75%;
@@ -3104,6 +3128,11 @@ HOME PAGE STYLES
 
     .bathroom-heading-container p{
         font-size: clamp(1.3rem, 3vw, 8rem);
+    }
+
+    .b-row-one-img-container::after{
+        top: -7%;
+        height: 120%;
     }
 
     .b-gallery-row-two::before{
@@ -3155,7 +3184,7 @@ HOME PAGE STYLES
     }
 
     .k-row-one-img-container::after{
-        left: 12%;
+        left: 8%;
         top: -7%;
     }
 
@@ -3185,7 +3214,7 @@ HOME PAGE STYLES
     }
 
     .er-gallery-row-one::after{
-        left: 10%;
+        left: 8%;
     }
 }    
 
