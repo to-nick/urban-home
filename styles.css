@@ -692,8 +692,11 @@ BATHROOM INTRO SECTION
     color: white;
     padding: 0.5rem;
     border-radius: 10px;
-    border: black solid 2px;
+    border: white solid 2px;
     background-color: var(--color-primary);
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .get-in-touch-button-bathroom:hover{
@@ -1030,8 +1033,7 @@ BATHROOM GALLERY SECTION
 
 .b-row-six-img{
     height: 100%;
-    width: auto;
-    max-width: 450px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -1318,6 +1320,9 @@ KITCHEN INTRO SECTION
     border-radius: 10px;
     border: #595b59 solid 2px;
     background-color: #e5e1df;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .get-in-touch-button-kitchen:hover{
