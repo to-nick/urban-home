@@ -35,6 +35,24 @@
             <h1>Contact Us</h1>
             <p>Please fill out the form below and we will be get back to you as soon as possible:</p>
             <form class="contact-form" id="contactForm" action="https://formsubmit.co/nicktorrens14@gmail.com" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display:none">
+
+                <!-- disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- success page redirect -->
+                <input type="hidden" name="_next" value="https://uhdb-melb.com.au/thank-you.html">
+
+                <!-- Reply to -->
+                <input type="email" name="email" placeholder="Email Address">
+
+                <!-- Set reply subject -->
+                <input type="hidden" name="_subject" value="UHDB contact submission">
+
+                <!-- cc emails -->
+                <input type="hidden" name="_cc" value="nicktorrens14@gmail.com">
+
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input 

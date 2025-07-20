@@ -2142,6 +2142,87 @@ CONTACT US STYLES
 
 /********************************************************
 ********************************************************
+THANK YOU PAGE STYLES
+********************************************************
+********************************************************/
+
+/* #region */
+.thank-you-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #d5d3d3;
+}
+
+.thank-you-section {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primary);
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-content h1 {
+    font-family: var(--font-primary);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.thank-you-content p {
+    font-family: var(--font-secondary);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.thank-you-button-container {
+    margin-top: 2rem;
+}
+
+.return-home-button {
+    display: inline-block;
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: white;
+    background-color: grey;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.return-home-button:hover {
+    background-color: white;
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.er-gallery-row-three{
+    padding: 0 1rem 1rem 1rem;
+}
+
+.thank-you-container {
+    padding: 1rem;
+}
+
+.thank-you-section {
+    padding: 1.5rem 1rem;
+}
+
+/* #endregion */
+
+/********************************************************
+********************************************************
 MEDIA QUERIES
 ********************************************************
 ********************************************************/
@@ -2150,7 +2231,6 @@ MEDIA QUERIES
     .kitchen-heading-container p{
         font-size: clamp(2rem, 3vw + 1rem, 8rem);
     }
-
 }
 
 
@@ -2605,7 +2685,7 @@ HOME PAGE STYLES
         position: relative;
         grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
         gap: 1rem;
-        padding: 1rem 2rem 0rem 1rem;
+        padding: 1rem 2rem 0rem 2rem;
         width: 100%;
     }
 
@@ -2623,7 +2703,7 @@ HOME PAGE STYLES
         position: relative;
         grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
         gap: 1rem;
-        padding: 0rem 2rem 0rem 1rem;
+        padding: 0rem 2rem 0rem 2rem;
         width: 100%;
     }
 
@@ -2769,11 +2849,16 @@ HOME PAGE STYLES
     ********************************************************/
 
     .contact-form {
-        padding: 1rem;
+        padding: 2rem;
     }
     
     .submit-button {
         width: 100%;
+    }
+
+    .thank-you-section {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
     }
 
     .review-content {
@@ -3222,6 +3307,5 @@ HOME PAGE STYLES
         left: 8%;
     }
 }    
-
 
 
