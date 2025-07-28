@@ -8,7 +8,7 @@
     <!-- <link href="./aos.css" rel="stylesheet" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Lora:ital@1&family=Playfair+Display:ital@0;1&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Lora:ital@1&family=Playfair+Display:ital@0;1&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,100;1,100&display=swap" fetchpriority="high" rel="stylesheet">
     <script src="./Assets/scripts/scripts.js"></script>
     <link rel="icon" type="image/x-icon" href="./Assets/images/Logos/branding/favicon_io (2)/favicon.ico">
 
@@ -35,14 +35,16 @@
         <div class="home-hero-section-container">
             <section class="home-hero-section">
                 <img class="home-hero-image" 
-                     src="https://res.cloudinary.com/dfgnpoymx/image/upload/w_600,q_auto:good,f_auto/v1752825630/Northcote-Melbourne-Kitchen-renovation-hero_woapst.jpg"
+                    loading="eager"
+                    fetchpriority="high"
+                     src="https://res.cloudinary.com/dfgnpoymx/image/upload/w_600,q_auto:good,f_auto/v1753661241/Northcote_Melbourne_Kitchen_Renovation_Hero_qa1oyp.jpg"
                      srcset="
-                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_400,q_auto:good,f_auto/v1752825630/Northcote-Melbourne-Kitchen-renovation-hero_woapst.jpg 400w,
-                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_600,q_auto:good,f_auto/v1752825630/Northcote-Melbourne-Kitchen-renovation-hero_woapst.jpg 600w,
-                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_800,q_auto:good,f_auto/v1752825630/Northcote-Melbourne-Kitchen-renovation-hero_woapst.jpg 800w,
-                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_1000,q_auto:good,f_auto/v1752825630/Northcote-Melbourne-Kitchen-renovation-hero_woapst.jpg 1000w,
-                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_1200,q_auto:good,f_auto/v1752825630/Northcote-Melbourne-Kitchen-renovation-hero_woapst.jpg 1200w,
-                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_1440,q_auto:good,f_auto/v1752825630/Northcote-Melbourne-Kitchen-renovation-hero_woapst.jpg 1440w
+                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_400,q_auto:good,f_auto/v1753661241/Northcote_Melbourne_Kitchen_Renovation_Hero_qa1oyp.jpg 400w,
+                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_600,q_auto:good,f_auto/v1753661241/Northcote_Melbourne_Kitchen_Renovation_Hero_qa1oyp.jpg 600w,
+                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_800,q_auto:good,f_auto/v1753661241/Northcote_Melbourne_Kitchen_Renovation_Hero_qa1oyp.jpg 800w,
+                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_1000,q_auto:good,f_auto/v1753661241/Northcote_Melbourne_Kitchen_Renovation_Hero_qa1oyp.jpg 1000w,
+                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_1200,q_auto:good,f_auto/v1753661241/Northcote_Melbourne_Kitchen_Renovation_Hero_qa1oyp.jpg 1200w,
+                         https://res.cloudinary.com/dfgnpoymx/image/upload/w_1440,q_auto:good,f_auto/v1753661241/Northcote_Melbourne_Kitchen_Renovation_Hero_qa1oyp.jpg 1440w
                      "
                      sizes="100vw"
                      alt="Northcote Melbourne Kitchen renovation hero image">
@@ -61,6 +63,7 @@
                         <div class="about-us-image-container">
                             <img class="about-us-image" 
                             src="https://res.cloudinary.com/dfgnpoymx/image/upload/w_348,q_auto:good,f_auto/v1752390525/about-us_dpp49l.jpg" 
+                            loading="lazy"
                             height="650" width="650" 
                             srcset="
                                     https://res.cloudinary.com/dfgnpoymx/image/upload/w_191,q_auto:good,f_auto/v1752390525/about-us_dpp49l.jpg 191w,
@@ -103,6 +106,7 @@
                         </article>
                         <div class="about-us-image-container-two">
                             <img class="about-us-image-two" 
+                            loading="lazy"
                             src="https://res.cloudinary.com/dfgnpoymx/image/upload/w_191,q_auto:good,f_auto/v1752390516/melbourne-existing-home-renovation_y9zhjt.jpg"
                             width="575" height="740"
                             srcset="
