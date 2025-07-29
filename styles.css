@@ -1880,7 +1880,6 @@ HOME EXTENSION STYLES
 }
 
 .er-row-one-right-img-container{
-    aspect-ratio: 1/1;
     max-width: 100%;
 }
 
@@ -1888,7 +1887,6 @@ HOME EXTENSION STYLES
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-width: 100%;
 }
 
 .er-gallery-row-two{
