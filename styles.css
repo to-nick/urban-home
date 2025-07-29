@@ -277,15 +277,17 @@ HERO IMAGE SECTION STYLES
     position: absolute;
     width:  fit-content;
     z-index: 11;
+    box-shadow: 3px 3px 5px black;
     background-color: rgba(115, 115, 112, 0.8);
+    border-radius: 10px;
     font-family: 'Playfair Display', sans-serif;
     color: white;
-    font-size: clamp(1rem, 3vw + 0.25rem, 8rem);
+    font-size: clamp(1rem, 3vw + 1rem, 8rem);
     font-weight: 100;
     white-space: nowrap;
     bottom: 10%;
     left: 10%;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 }
 
 
@@ -1855,8 +1857,7 @@ HOME EXTENSION STYLES
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 5rem;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .er-row-one-left-img-container{
@@ -2856,6 +2857,10 @@ HOME PAGE STYLES
 
 @media (max-width: 600px) {
 
+    .hero-text-container{
+        font-size: clamp(1rem, 3vw + 0.75rem, 8rem);
+    }
+
     .about-us-content-container{
         padding: 2rem 3rem 2rem 3rem;
     }
@@ -2917,10 +2922,6 @@ HOME PAGE STYLES
     .home-extension-text-container{
         font-size: clamp(1rem, 4vw + 1rem, 8rem);
         padding: 4rem;
-    }
-
-    .er-row-one-left-container{
-        gap: 3rem
     }
 
     .er-gallery-row-one::after{
@@ -3177,6 +3178,11 @@ HOME PAGE STYLES
 }
 
 @media(max-width: 400px){  
+
+    .hero-text-container{
+        font-size: clamp(1rem, 3vw + 0.75rem, 8rem);
+        padding: 1rem;
+    }
 
     .about-us-image-container-two{
         width: 75%;
