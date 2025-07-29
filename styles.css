@@ -775,7 +775,6 @@ BATHROOM GALLERY SECTION
 
 .b-row-one-img-container{
     width: 100%;
-    height: 100%;
 }
 
 .b-row-one-img-container::after{
@@ -837,7 +836,6 @@ BATHROOM GALLERY SECTION
 }
 
 .b-row-two-img-container{
-    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
@@ -857,7 +855,6 @@ BATHROOM GALLERY SECTION
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
 }
 
 .b-gallery-row-three{
@@ -881,7 +878,6 @@ BATHROOM GALLERY SECTION
 }
 
 .b-row-three-img-container{
-    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
@@ -945,7 +941,6 @@ BATHROOM GALLERY SECTION
 }
 
 .b-row-four-img-container{
-    height: 100%;
     width: 100%;
     aspect-ratio: 4/5;
     display: flex;
@@ -979,7 +974,6 @@ BATHROOM GALLERY SECTION
 
 .b-row-five-img-container{
     width: 100%;
-    height: 100%;
 }
 
 .b-row-five-img-container::after{
@@ -1025,7 +1019,6 @@ BATHROOM GALLERY SECTION
 
 
 .b-row-six-img-container{
-    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
@@ -1099,7 +1092,6 @@ BATHROOM GALLERY SECTION
 }
 
 .b-row-seven-img-container{
-    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
@@ -1173,9 +1165,7 @@ BATHROOM GALLERY SECTION
 }
 
 .b-row-eight-img-container{
-    height: 100%;
     width: 100%;
-    max-height: 60vh;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -1207,7 +1197,6 @@ BATHROOM GALLERY SECTION
 }
 
 .b-row-nine-img-container{
-    height: 100%;
     width: 100%;
     max-height: 60vh;
     position: relative;
@@ -2236,7 +2225,6 @@ MEDIA QUERIES
     }
 
     .b-row-eight-img-container{
-        max-height: 40vh;
         align-items: center;
         justify-content: center;
     }
@@ -2681,7 +2669,7 @@ HOME PAGE STYLES
         position: relative;
         grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
         gap: 1rem;
-        padding: 1rem 2rem 0rem 2rem;
+        padding: 1rem 2rem 0rem 1rem;
         width: 100%;
     }
 
