@@ -1525,7 +1525,6 @@ KITCHEN GALLERY SECTION
     gap: 1rem;
     padding: 0 2rem 1rem 2rem;
     width: 90%;
-    align-items: center;
     position: relative;
     justify-content: center;
 }
@@ -1605,7 +1604,6 @@ KITCHEN GALLERY SECTION
     flex-direction: column;
     font-family: 'Playfair Display', sans-serif;
     font-size: clamp(0.75rem, 2vw, 2rem);
-    height: 100%;
     justify-content: space-between;
     gap: 1rem;
 }
