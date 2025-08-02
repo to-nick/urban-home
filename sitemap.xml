@@ -6,29 +6,29 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 <url>
-  <loc>https://uhdb-melbourne.netlify.app/</loc>
+  <loc>https://uhdb-melb.com.au</loc>
   <lastmod>2025-07-15T03:17:09+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://uhdb-melbourne.netlify.app/kitchen.html</loc>
+  <loc>https://uhdb-melb.com.au/kitchen.html</loc>
   <lastmod>2025-07-15T03:17:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://uhdb-melbourne.netlify.app/bathroom.html</loc>
+  <loc>https://uhdb-melb.com.au/bathroom.html</loc>
   <lastmod>2025-07-15T03:17:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://uhdb-melbourne.netlify.app/contact.html</loc>
-  <lastmod>2025-07-15T03:17:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://uhdb-melbourne.netlify.app/home-extensions.html</loc>
+  <loc>https://uhdb-melb.com.au/contact.html</loc>
   <lastmod>2025-07-15T03:17:09+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://uhdb-melb.com.au/home-extensions.html</loc>
+  <lastmod>2025-07-15T03:17:09+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 </urlset>
