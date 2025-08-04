@@ -214,6 +214,7 @@ footer{
     justify-content: center;
     gap: 1rem;
     width: 10%;
+    min-width: 100px;
     padding: 1rem 0;
 }
 
