@@ -279,15 +279,15 @@ HERO IMAGE SECTION STYLES
     width:  fit-content;
     z-index: 11;
     box-shadow: 3px 3px 5px black;
-    background-color: rgba(115, 115, 112, 0.8);
+    background-color: rgba(115, 115, 112, 0.7);
     border-radius: 10px;
     font-family: 'Playfair Display', sans-serif;
     color: white;
-    font-size: clamp(1rem, 3vw + 1rem, 8rem);
+    font-size: clamp(1rem, 3vw + 0.25rem, 8rem);
     font-weight: 100;
     white-space: nowrap;
-    bottom: 10%;
-    left: 10%;
+    bottom: 7.5%;
+    left: 7.5%;
     padding: 2rem 2rem;
 }
 
@@ -646,7 +646,7 @@ BATHROOM INTRO SECTION
 .bathrooms-intro-section-container{
     width: 100%;
     display: flex;
-    background-color: var(--color-primary);
+    background-color: #e5e1df;
     padding: 1rem 0;
     margin: 4rem 0 0rem 0;
     border-bottom: black solid 2px;
@@ -683,7 +683,7 @@ BATHROOM INTRO SECTION
 .bathroom-heading-container p{
     font-family: 'Playfair Display', sans-serif;
     font-size: clamp(2rem, 3vw + 1.5rem, 8rem);
-    color: rgb(255, 255, 255);
+    color: #595b59;;
     font-weight: 100;
     white-space: noWrap;
 }
@@ -693,11 +693,11 @@ BATHROOM INTRO SECTION
     width: 50%;
     align-self: flex-end;
     font-family: var(--font-primary);
-    color: white;
+    color: #595b59;
     padding: 0.5rem;
     border-radius: 10px;
-    border: white solid 2px;
-    background-color: var(--color-primary);
+    border: #595b59 solid 2px;
+    background-color: #e5e1df;
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -705,8 +705,8 @@ BATHROOM INTRO SECTION
 
 .get-in-touch-button-bathroom:hover{
     cursor: pointer;
-    background-color: rgb(206, 205, 199);
-    color: #515655;
+    background-color: #515655;
+    color: #e5e1df;
 }
 
 .bathroom-intro-image-container{
@@ -1176,13 +1176,12 @@ BATHROOM GALLERY SECTION
     object-fit: cover;
 }
 
-
 .b-gallery-row-nine{
     display: grid;
     position: relative;
-    grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
+    grid-template-columns: 5fr 47.5fr 47.5fr;
     gap: 1rem;
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 0rem 2rem 0rem 2rem;
     width: 90%;
 }
 
@@ -1190,14 +1189,25 @@ BATHROOM GALLERY SECTION
     content: "";
     position: absolute;
     left: 5%;
-    top: -15%;
-    height: 130%;
+    top: -25%;
+    height: 140%;
     border-left: 2px solid black;
+}
+
+.b-projects-text-container-row-nine{
+    display: grid;
+    grid-template-columns: 5fr 95fr;
+    gap: 1rem;
+    width: 100%;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: clamp(0.75rem, 2vw, 2rem);
+    align-self: center;
+    text-align: center;
+    padding: 1rem 2rem;
 }
 
 .b-row-nine-img-container{
     width: 100%;
-    max-height: 60vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -1213,7 +1223,7 @@ BATHROOM GALLERY SECTION
 .b-title-container-nine{
     display: grid;
     position: relative;
-    grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
+    grid-template-columns: 5fr 47.5fr 47.5fr;
     gap: 1rem;
     padding: 0rem 2rem 0rem 2rem;
     width: 90%;
@@ -2413,6 +2423,10 @@ NAVBAR STYLES
 HOME PAGE STYLES
 ********************************************************/
 
+    .projects-page-container{
+        margin-bottom: 2rem;
+    }
+
     .about-us-content-container{
      gap: 0rem;
      padding-top: 4rem;
@@ -2511,7 +2525,6 @@ HOME PAGE STYLES
     .bathrooms-intro-section-container{
         width: 100%;
         display: flex;
-        background-color: var(--color-primary);
         padding: 1rem 0;
         margin: 2rem 0 1rem 0;
         border-bottom: black solid 2px;
@@ -2646,8 +2659,7 @@ HOME PAGE STYLES
     }
 
     .b-gallery-row-seven::after{
-        left: -5.60%;
-        
+        left: 0%;
     }
 
     .b-gallery-row-eight{
@@ -2655,16 +2667,24 @@ HOME PAGE STYLES
         width: 100%;
     }
 
+    .b-gallery-row-eight::before{
+        right: 2%;
+    }
+
     .b-gallery-row-eight::after{
         left: 0%;
+    }
+
+    .b-projects-text-container-row-nine{
+        padding: 1rem 2rem 1rem 1rem;
     }
 
     .b-gallery-row-nine{
         display: grid;
         position: relative;
-        grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
+        grid-template-columns: 5fr 47.5fr 47.5fr;
         gap: 1rem;
-        padding: 1rem 2rem 0rem 1rem;
+        padding: 0rem 2rem 0rem 1rem;
         width: 100%;
     }
 
@@ -2672,17 +2692,17 @@ HOME PAGE STYLES
         content: "";
         position: absolute;
         left: 5%;
-        top: -15%;
-        height: 130%;
+        top: -25%;
+        height: 140%;
         border-left: 2px solid black;
     }
 
     .b-title-container-nine{
         display: grid;
         position: relative;
-        grid-template-columns: 5fr 31.666fr 31.66fr 31.66fr;
+        grid-template-columns: 5fr 47.5fr 47.5fr;
         gap: 1rem;
-        padding: 0rem 2rem 0rem 2rem;
+        padding: 0rem 2rem 0rem 1rem;
         width: 100%;
     }
 
@@ -2859,6 +2879,7 @@ HOME PAGE STYLES
 
     .hero-text-container{
         font-size: clamp(1rem, 3vw + 0.75rem, 8rem);
+        padding: 1rem;
     }
 
     .about-us-content-container{
@@ -2952,6 +2973,11 @@ HOME PAGE STYLES
         padding: 1rem;
     }
 
+    .b-gallery-row-nine::before{
+        top: -30%;
+        height: 140%;
+    }
+
     .kitchen-heading-container p{
         font-size: clamp(1.5rem, 3vw, 8rem);
     }
@@ -3032,7 +3058,7 @@ HOME PAGE STYLES
     }
 
     .b-gallery-row-nine{
-        padding: 1rem 2rem 0rem 0rem;
+        padding: 0rem 2rem 0rem 0rem;
     }
 
     .b-title-six-container{
@@ -3055,6 +3081,14 @@ HOME PAGE STYLES
 
     .b-projects-text-container-eight p{
         padding-top: 0%;
+    }
+
+    .b-gallery-row-eight::before{
+        right: 4%;
+    }
+
+    .b-projects-text-container-row-nine{
+        padding: 1rem 2rem 1rem 0rem;
     }
 
     .b-title-container-nine{
@@ -3245,6 +3279,11 @@ HOME PAGE STYLES
         padding-top: 0%;
         font-family: 'Playfair Display', sans-serif;
         font-size: clamp(0.75rem, 2vw, 2rem);
+    }
+
+    .b-gallery-row-nine::before{
+        top: -45%;
+        height: 155%;
     }
 
     .kitchen-intro-image-container{
